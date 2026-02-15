@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href=""><img src="images/runacoss-logo.png" /></a>
+        <div class="menu" id="menu">
+          <span class="close-btn" onclick="hideMenu()">&times;</span>
+          <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
+            <li><a href="Time.html">TIME-TABLE</a></li>
+          </ul>
+        </div>
+        <span class="hamburger" onclick="showMenu()">&#9776;</span>
+      </nav>
+      <div class="text">
+        <h1>TIME-TABLE</h1>
+        <p>Where Innovation Meets Education: Transforming Ideas into Solutions</p>
+       </div>  
+    </section>
+    <section class="table">
+      <div class="time">
+        <table>
+          <tr>
+            <td>DAYS</td>
+            <td><b>08:00-09:00</b></td>
+            <td>09:00-10:00</td>
+            <td>10:00-11:00</td>
+            <td>11:00-12:00</td>
+            <td>12:00-01:00</td>
+            <td>01:00-02:00</td>
+            <td>02:00-03:00</td>
+            <td>03:00-04:00</td>
+            <td>04:00-05:00</td>
+            <td>05:00-06:00</td>
+            <td>06:00-07:00</td>
+          </tr>
+          <tr>
+            <td>MONDAY</td>
+            <td colspan="2">CSC 318</td>
+            <td colspan="2">CSC 312(PRACTICAL)</td>
+            <td class="vertical" rowspan="5"><h1>SHORT BREAK</h1></td>
+            <td></td>
+            <td colspan="2">CSC 326</td>
+
+            <td></td>
+            <td></td>
+            
+          </tr>
+
+          <tr>
+            <td>TUESDAY</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2">CSC 324</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>WEDNSDAY</td>
+            <td colspan="2">CSC 332</td>
+            <td colspan="2">CSC 312(PRACTICAL)</td>
+            <td colspan="2">CSC 320</td>
+            <td colspan="2">CSC 316</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>THURSDAY</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td>FRIDAY</td>
+            <td colspan="2">CSC 312</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We are a vibrant and diverse community of faculty, staff, and students
+        passionate about<br />
+        advancing the field of computer science and using technology to<br />
+        make a positive impact on society.
+      </p>
+    </section>
+
+    <!-------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("menu");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

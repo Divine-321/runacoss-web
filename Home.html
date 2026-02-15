@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href=""><img src="images/runacoss-logo.png" /></a>
+        <div class="menu" id="menu">
+          <span class="close-btn" onclick="hideMenu()">&times;</span>
+          <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
+            <li><a href="Time.html">TIME-TABLE</a></li>
+          </ul>
+        </div>
+        <span class="hamburger" onclick="showMenu()">&#9776;</span>
+      </nav>
+      <div class="text">
+        <h1>Redeemer's University Association of Computer Science Students</h1>
+        <p>Where Innovation Meets Education: Transforming Ideas into Solutions</p>
+       </div>  
+    </section>
+    <section class="courses">
+      <h1>Courses We Offer</h1>
+      <p>
+        We offer three major courses in our Computer Science program, designed
+        to equip you with cutting-edge skills and knowledge
+      </p>
+      <div class="activities">
+        <div class="course">
+          <h1>Cybersecurity</h1>
+          <p>
+            Learn to protect computer systems, networks, and data from cyber
+            threats with our comprehensive Cybersecurity course. Covering
+            security fundamentals, risk management, encryption, secure coding,
+            penetration testing, and incident response, this course prepares you
+            for a career in this in-demand field.
+
+            <br />Gain a deep understanding of cybersecurity and prepare to
+            defend against cyber threats in this critical field.
+          </p>
+        </div>
+        <div class="course">
+          <h1>Information Technology</h1>
+          <p>
+            Learn to design, develop, and manage computer-based systems and
+            technologies with our comprehensive Information Technology course.
+            Covering IT fundamentals, software applications, data management,
+            and networking, this course prepares you for a career in this
+            dynamic field.
+
+            <br />Gain a broad understanding of information technology and
+            prepare to succeed in this rapidly evolving field.
+          </p>
+        </div>
+        <div class="course">
+          <h1>Computer Science</h1>
+          <p>
+            Explore the fascinating world of computer science and learn to
+            design, develop, and apply computer systems and technologies with
+            our comprehensive course. Covering the fundamentals of computer
+            science, programming, data structures, algorithms, software
+            engineering, and computer systems, this course prepares you for a
+            career in this cutting-edge field. <br />Gain a deep understanding
+            of computer science and prepare to innovate and shape the future of
+            technology.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="curriculum">
+      <h1>Our Curriculum</h1>
+      <p>
+        The Computer Science department curriculum is designed to provide
+        students with a solid foundation in the principles and practices of
+        computer science, preparing them for successful careers in this dynamic
+        and rapidly evolving field
+      </p>
+      <div class="activities">
+        <div class="lecture">
+          <img src="images/Lecture1.jpeg" />
+          <h3>Lectures</h3>
+          <p>
+            Here, you'll find a comprehensive collection of theoretical lectures
+            on various topics in Computer Science. Our lectures cover a wide
+            range of topics, including programming languages, data structures,
+            algorithms, computer systems, and software engineering. Each lecture
+            is carefully crafted to provide a clear and concise understanding of
+            the subject matter. Our lectures are perfect for students,
+            professionals, and anyone looking to expand their knowledge in the
+            field. We provide a solid foundation in the principles and concepts
+            of computer science.
+          </p>
+        </div>
+        <div class="lecture">
+          <img src="images/Lecture.jpeg" />
+          <h3>Practicals</h3>
+          <p>
+            Here, you'll find a collection of hands-on exercises and projects to
+            apply theoretical concepts to real-world problems. Our practicals
+            cover a range of topics, including programming, data analysis, web
+            development, artificial intelligence, and database management. Each
+            practical includes a clear description of the problem, requirements,
+            and expected output. We provide necessary resources and references
+            to help you develop the skills and expertise needed to succeed. Our
+            practicals are designed to help you succeed in the field of computer
+            science.
+          </p>
+        </div>
+        <div class="lecture">
+          <img src="images/banner2.jpg" />
+          <h3>Internship Training(IT)</h3>
+          <p>
+            We offer a comprehensive 6-month internship training program in
+            collaboration with top IT companies. Our program provides students
+            with practical experience in various computer science fields,
+            including software development, data science, artificial
+            intelligence, and cybersecurity. Students work on real-world
+            projects, collaborate with industry professionals, and develop
+            skills and expertise. Our partner companies include leading IT
+            firms, startups, and innovative organizations, ensuring a dynamic
+            and diverse range of settings.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="reg">
+      <h1>Register with RUNACOSS</h1>
+      <a href="Register.html" class="text-box">ENROLL NOW</a>
+    </section>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We are a vibrant and diverse community of faculty, staff, and students
+        passionate about<br />
+        advancing the field of computer science and using technology to<br />
+        make a positive impact on society.
+      </p>
+      </section>
+      
+    <!-------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("menu");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

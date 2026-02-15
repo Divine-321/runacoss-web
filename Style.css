@@ -1,0 +1,370 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.header {
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/Perfect.jpeg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+  }
+  
+  nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  nav img {
+	width: 250px;
+  }
+  
+  .menu {
+	flex: 1;
+	text-align: right;
+  }
+  
+  .menu ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+  }
+  
+  .menu ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 600;
+  }
+  
+  .menu ul li::after {
+	content: '';
+	width: 0%;
+	height: 1px;
+	background: rgb(210, 180, 140, 1.0);
+	display: block;
+	transition: 0.5s;
+  }
+  
+  .menu ul li:hover {
+	border: 1px solid rgb(210, 180, 140, 1.0);
+  }
+  
+  .menu ul li:hover::after {
+	width: 100%;
+  }
+  
+  .text {
+	width: 80%;
+	color: white;
+	position: relative;
+	left: 10%;
+	text-align: center;
+	margin-top: 12%;
+  }
+  
+  .text h1 {
+	font-size: 45px;
+  }
+  
+  .text p {
+	margin: 10px 0 40px;
+	font-size: 10px;
+	color: white;
+  }
+  
+  nav .hamburger,
+  nav .close-btn {
+	display: none;
+  }
+  .text-box{
+	text-decoration: none;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 10px;
+	background: transparent;
+	position: relative;
+}
+.text-box:hover{
+	border: 1px solid rgb(210, 180, 140, 1.0);
+	background: rgb(210, 180, 140, 1.0);
+	transition: 1s;
+}
+  
+  @media (max-width: 700px) {
+	.header {
+	  height: 600px;
+	  min-height: 60vh;
+	}
+	.text {
+	  margin-top: 24%;
+	}
+	.text h1 {
+	  font-size: 35px;
+	}
+	.menu ul li {
+	  display: block;
+	}
+	.menu {
+	  position: fixed;
+	  background: rgb(210, 180, 140, 1.0);
+	  height: 100vh;
+	  width: 200px;
+	  top: 0;
+	  right: -200px;
+	  text-align: left;
+	  transition: 1s;
+	  z-index: 1;
+	}
+	nav .hamburger,
+	nav .close-btn {
+	  display: block;
+	  color: #fff;
+	  margin: 10px;
+	  font-size: 22px;
+	  cursor: pointer;
+	}
+	.menu ul {
+	  padding: 30px;
+	}
+	.menu ul li a:hover {
+	  color: rgb(210, 180, 140, 1.0);
+	  background: white;
+	  padding: 3% 4% 3% 4%;
+	}
+  }
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+
+.courses{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.course{
+	flex-basis: 31%;
+	background: black;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	color: white;
+}
+.course h1{
+	border: 2px solid;
+	border-radius: 10px;
+	padding: 2%;
+}
+.course p{
+	color: white;
+}
+.course:hover{
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 15px black;
+	transition: 1s;
+}
+
+
+@media(max-width: 700px){
+	.activities{
+		flex-direction: column;
+	}
+}
+.curriculum{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.activities{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.lecture{
+	flex-basis: 31%;
+	border-radius: 10px;
+	text-align: left;
+	margin-bottom: 5%;
+	text-align: left;
+}
+.lecture img{
+	width: 100%;
+	border-radius: 10px;
+	height: 250px;
+	background-size: contain;
+	object-fit: cover;
+}
+.lecture p{
+	padding: 0;
+}
+.lecture h3{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+}
+.reg{
+	margin: 100px auto;
+	width: 80%;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Perfect.jpeg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 150px 0;
+}
+.reg h1{
+	color: #fff;
+	margin-bottom: 40px;
+	padding: 0;
+}
+@media(max-width: 700px){
+	.reg h1{
+		font-size: 20px;
+	}
+}
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+}
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+
+/* REGISTRATION PAGE */
+
+  
+  .form-container {
+	width: 50%; 
+	margin: 50px auto;
+	padding: 20px;
+	background-color:transparent ; 
+	border-radius: 10px; 
+	box-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+  
+  form {
+	padding: 20px;
+	color: #fff; 
+  }
+  
+  .ensure {
+	color: #fff;
+  }
+  
+  h1,
+  p {
+	text-align: center;
+  }
+  
+  #caption {
+	display: block;
+	margin-bottom: 15px;
+  }
+  
+  #caption input,
+  #caption select,
+  #feedback {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px; 
+	box-sizing: border-box; 
+  }
+  
+  legend {
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #fff;
+  }
+  
+  #check-box {
+	display: block;
+	margin: 10px 0; 
+  }
+  
+  #feedback {
+	margin-top: 10px;
+	padding: 10px;
+  }
+  
+  .submit {
+	text-align: center;
+  }
+  
+  input[type="submit"] {
+	width: 50%; 
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #008cba; 
+	color: #fff; 
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s; 
+  }
+  
+  input[type="submit"]:hover {
+	background-color: #005f6b;
+  }
+  
+
+
+  /* TIME-TABLE */
+
+  .time {
+	overflow-x: auto;
+  }
+  table {
+	margin: 10%;
+	border: 2px solid black;
+	border-collapse: collapse;
+  }
+  td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 150px;
+	height: 80px;
+	padding: 10px 5px;
+	text-align: center;
+  }
+  tr:nth-child(1) {
+	background: rgb(210, 180, 140, 1);
+	font-weight: 800;
+	font-size: 20px;
+  }
+  td:nth-child(1) {
+	background: rgb(210, 180, 140, 1);
+	font-weight: 800;
+	font-size: 20px;
+  }
+  .vertical {
+	writing-mode: vertical-rl;
+	padding: 15px 20px;
+	font-size: 1.5rem;
+	background: rgb(210, 180, 140, 1);
+  }

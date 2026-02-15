@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <style>
+      .header{
+        min-height: 160vh;
+        height: 230vh;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header" >
+      <nav>
+        <a href=""><img src="images/runacoss-logo.png" alt="Runacoss Logo" /></a>
+        <div class="menu" id="menu">
+          <span class="close-btn" onclick="hideMenu()">&times;</span>
+          <ul>
+            <li><a href="Home.html">HOME</a></li>
+            <li><a href="Register.html">REGISTER</a></li>
+            <li><a href="Time.html">TIME-TABLE</a></li>
+          </ul>
+        </div>
+        <span class="hamburger" onclick="showMenu()">&#9776;</span>
+      </nav>
+
+      <div class="form-container">
+        <form id="registrationForm" action="#" onsubmit="return validateForm()">
+          <h1>Registration Form</h1>
+          <p class="ensure">
+            Ensure that you fill out this form with the correct details
+          </p>
+          <label id="caption" for="name">
+            Name
+            <input type="text" name="name" required placeholder="Enter your name" />
+          </label>
+          <label id="caption" for="email">
+            Email
+            <input type="email" name="email" required placeholder="Enter your email" />
+          </label>
+          <label id="caption" for="dob">
+            Date of Birth <br />
+            <input type="date" name="dob" required />
+          </label>
+          <legend>Gender</legend>
+          <label id="check-box">
+            <input type="radio" name="gender" value="male" required /> Male
+          </label>
+          <label id="check-box">
+            <input type="radio" name="gender" value="female" required /> Female
+          </label>
+          <label id="caption" for="phoneNumber">
+            Phone Number (Optional) <br />
+            <input type="number" name="number" placeholder="Phone Number" />
+          </label>
+          <label id="caption" for="dropdown">
+            Academic Program
+            <select name="study_type" id="dropdown" required>
+              <option value="">Select Programme</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="postgraduate">Postgraduate</option>
+            </select>
+          </label>
+          <legend>Course of Study</legend>
+          <label id="check-box">
+            <input type="radio" name="course" value="Cybersecurity" required /> Cybersecurity
+          </label>
+          <label id="check-box">
+            <input type="radio" name="course" value="Infotech" required /> Information Technology
+          </label>
+          <label id="check-box">
+            <input type="radio" name="course" value="cs" required /> Computer Science
+          </label>
+          <legend>Which of the following aspects interests you?</legend>
+          <label id="check-box" for="course">
+            <input type="checkbox" value="web" /> Web Development
+          </label>
+          <label id="check-box">
+            <input type="checkbox" value="data" /> Data Science
+          </label>
+          <label id="check-box">
+            <input type="checkbox" value="Network" /> Computer Networks
+          </label>
+          <label id="check-box">
+            <input type="checkbox" value="Ai" /> Artificial Intelligence
+          </label>
+          <label id="check-box">
+            <input type="checkbox" value="Software" /> Software Engineering
+          </label>
+          <label id="check-box">
+            <input type="checkbox" value="data" /> Database Systems
+          </label>
+          <label id="check-box" for="feedback">
+            Additional Comments:
+            <textarea id="feedback" name="feedback" cols="30" rows="3" placeholder="Comment...."></textarea>
+          </label>
+          <div class="submit">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        We are a vibrant and diverse community of faculty, staff, and students
+        passionate about<br />
+        advancing the field of computer science and using technology to<br />
+        make a positive impact on society.
+      </p>
+    </section>
+
+    <!-------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("menu");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+
+      //JavaScript for Registration Submission
+
+      function validateForm() {
+        var form = document.getElementById('registrationForm');
+        var requiredFields = form.querySelectorAll('[required]');
+        var allFilled = true;
+        requiredFields.forEach(function(field) {
+          if (!field.value) {
+            allFilled = false;
+          }
+        });
+        if (allFilled) {
+          alert('Form submitted successfully!');
+          return true;
+        } 
+      }
+    </script>
+  </body>
+</html>
